@@ -1,0 +1,32 @@
+docker build .
+
+docker run -p 3000:80 image-sha256 -> create a new container based on one image and start them
+
+flags: ["-a", "-d"]
+
+-a attached mode
+-d detached mode
+
+link: https://www.udemy.com/course/docker-kubernetes-the-practical-guide/learn/lecture/22166826#overview
+
+docker start container-name 
+
+flags: ["-a", "-d"]
+
+docker stop container-name
+
+========================= info =========================
+
+docker ps -> show all runing containers
+docker ps -a -> show all containers
+
+docker images -> show all images
+
+docker logs container-name -> show container logs 
+flags: ["-f"]
+rest in attached mode
+
+
+========================= remove =========================
+docker rm container-name
+docker rmi image-id
