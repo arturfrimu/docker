@@ -1,0 +1,10 @@
+docker run -i image-id -> create and start a container in a interactive mode
+flags ["-i"]
+
+-i interactive mode
+
+docker start -ai -> start the container attached & interactive mode
+
+When using Docker run we are attached to the container so we can listen to output printed by the container
+but we're not attached to it in the sense of being able to enter anything
+to input something into the container use -i interactive mode
