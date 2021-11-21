@@ -32,6 +32,9 @@ docker logs container-name
 flags: ["-f"]
 -f rest in attached mode
 
+docker cp folder-name/. container-name:/folder-into-container 
+docker cp container-name:/folder-into-container folder-name-local  
+
 docker rm container-name
 
 
