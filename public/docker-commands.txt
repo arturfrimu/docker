@@ -1,6 +1,8 @@
+========================= IMAGES =========================
+
 docker build .
 
-docker run -p 3000:80 image-sha256 -> create a new container based on one image and start them
+docker run -p 3000:80 image-sha256 -> create a new container based on image and start them
 
 flags: ["-a", "-d", "-p","--rm"]
 
@@ -9,7 +11,13 @@ flags: ["-a", "-d", "-p","--rm"]
 -p port
 --rm remove automatically the container when it exits
 
-link: https://www.udemy.com/course/docker-kubernetes-the-practical-guide/learn/lecture/22166826#overview
+docker images
+
+docker image inspect image-id
+
+docker rmi image-id
+
+========================= CONTAINERS =========================
 
 docker start container-name 
 
@@ -17,20 +25,13 @@ flags: ["-a", "-d"]
 
 docker stop container-name
 
-========================= info =========================
+docker ps
+docker ps -a
 
-docker ps -> show all runing containers
-docker ps -a -> show all containers
-
-docker images -> show all images
-
-docker logs container-name -> show container logs 
+docker logs container-name
 flags: ["-f"]
-rest in attached mode
+-f rest in attached mode
 
-
-========================= remove =========================
 docker rm container-name
-docker rmi image-id
 
 
