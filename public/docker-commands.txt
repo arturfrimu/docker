@@ -1,15 +1,18 @@
 ========================= IMAGES =========================
 
 docker build .
+docker build -t image-name:tag-name .
+flags ["-t"]
 
 docker run -p 3000:80 image-sha256 -> create a new container based on image and start them
 
-flags: ["-a", "-d", "-p","--rm"]
+flags: ["-a", "-d", "-p","--rm", "--name"]
 
 -a attached mode
 -d detached mode
 -p port
 --rm remove automatically the container when it exits
+--name create a name for container
 
 docker images
 
