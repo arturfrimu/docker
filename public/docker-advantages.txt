@@ -1,0 +1,6 @@
+Thanks to Docker, which we use here.
+We don't need to install Python globally on our system, it's in the image and container instead.
+We could have a Python 3.7 based app next to a Python 3.9 based app without switching python versions in between.
+
+We're also using it to share our images and containers with others.
+That could be team members who are working on the same project, or that could be servers on which we wanna deploy our containers.

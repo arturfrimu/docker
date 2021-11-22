@@ -18,7 +18,13 @@ docker images
 
 docker image inspect image-id
 
+docker tag image-name:image-tag new-image-name:new-image-tag   -> create a clone of the image
+
+docker push docker-hub-id/repository-name -> repository-name needs to matches to local-image-name
+
+
 docker rmi image-id
+docker prune -a -> delete all local images
 
 ========================= CONTAINERS =========================
 
