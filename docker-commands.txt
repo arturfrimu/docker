@@ -1,0 +1,8 @@
+docker run -d --rm -v feedback:/app/feedback --name feedback-app -p 3000:80 image-name/image-id
+flags ["-v"]
+-v volumes -> my-name:/folder/file -> it will be saved when the container will be removed
+
+docker volume ls
+
+docker volume rm VOL_NAME
+docker volume prune .
